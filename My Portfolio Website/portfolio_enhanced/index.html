@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ae0d295774.js" crossorigin="anonymous"></script>
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav data-aos="fade-down" data-aos-duration="1000">
+            <img src="Images/logo2.jpg" class="logo2" data-aos="zoom-in" data-aos-delay="200">
+            <ul id="sidemenu" data-aos="fade-left" data-aos-delay="400">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+        </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
+            <p data-aos="fade-right" data-aos-delay="800">CS Engineer</p>
+            <h1 data-aos="fade-up" data-aos-delay="1000">Hi,I'm <span class="typing-effect">Anurag Salpe</span><br>From India</h1>
+        </div>
+    </div>
+    <div class="scroll-indicator" data-aos="bounce" data-aos-delay="1500">
+        <div class="scroll-arrow"></div>
+    </div>
+</div>
+<style>
+    img{
+        width: 370px;
+        height: 370px; 
+    }
+</style>
+<!-- --------about-------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1" data-aos="fade-right" data-aos-duration="1000">
+                <img src="Images/user.jpg" class="profile-image"> 
+            </div>
+            <div class="about-col-2" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                <h1 class="sub-title" data-aos="fade-up" data-aos-delay="300">About Me</h1>
+                <p data-aos="fade-up" data-aos-delay="400">Highly motivated Computer Science Engineering student with programming
+                   skills in HTML, CSS, JavaScript, PHP, C, C++, Java, Python and MySQL,complemented 
+                   by expertise in Data Structures & Algorithms. Passionate about AI development and 
+                   web technologies, with hands-on experience building LLM chains, AI agents, and
+                   web applications. My projects include an AI-powered calculator and functional web 
+                   applications,showcasing my ability to integrate AI and develop robust frontend solutions.
+                   I am seeking opportunitiesb apply my technical expertise in a dynamic software development environment.</p>
+
+                   <div class="tab-titles" data-aos="fade-up" data-aos-delay="500">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                   </div>
+                   <div class="tab-contents active-tab" id="skills" data-aos="fade-up" data-aos-delay="600">
+                    <ul>
+                        <li><span>Mobile App Developer</span><br>Building Andriod apps</li>
+                        <li><span>Game Developer</span><br>Developing and Maintaining Games</li>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id="experience" data-aos="fade-up" data-aos-delay="600">
+                    <ul>
+                        <li><span>2025 - Current</span><br>Andriod Application training from ScholarHat</li>
+                        <li><span>2024 - 2025</span><br>Developed a Puzzle Game and Launched in Goggle PlayStore</li>
+                        <li><span>2022 - 2023</span><br>Made a Websites Using Frontend</li>
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id="education" data-aos="fade-up" data-aos-delay="600">
+                    <ul>
+                        <li><span>2025 - Current</span><br>B.tech CSE from Sandip University,Nashik</li>
+                        <li><span>2021</span><br>12th from Deogiri College,Chhatrapati Sambhajinagar</li>
+                    </ul>
+                   </div>
+            </div>
+         </div>
+        </div>
+    </div>
+</div>
+<!----------services----------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title" data-aos="fade-up" data-aos-duration="1000">My Services</h1>
+        <div class="services-list">
+            <div data-aos="fade-up" data-aos-delay="200" class="service-card">
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Web design refers to the design of websites. It usually refers to the user experience
+                   aspects of website development rather than software development. Web design used to be
+                   focused on designing websites for desktop browsers.</p>
+                   <a href="#">Learn more</a>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="400" class="service-card">
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>App Design</h2>
+                <p>App design is the process of creating the user interface (UI) and user experience (UX) 
+                   of a mobile or web application. It involves crafting an app that is both visually appealing
+                   and easy to use, with a focus on intuitive navigation and functionality.</p>
+                   <a href="#">Learn more</a>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="600" class="service-card">
+                <i class="fa-solid fa-robot"></i>
+                <h2>AI Agent Design</h2>
+                <p>AI agent design focuses on creating smart systems that handle complex tasks without constant
+                   human supervision. Whether you're a developer aiming to build advanced AI or a tech leader 
+                   exploring new possibilities.</p>
+                   <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------portfolio--------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title" data-aos="fade-up" data-aos-duration="1000">My Work</h1>
+        <div class="work-list">
+            <div class="work" data-aos="zoom-in" data-aos-delay="200">
+                <img src="Images/work1.jpg">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you to the talented people around the world.
+                        Download it from Goggle Play Store</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work" data-aos="zoom-in" data-aos-delay="400">
+                <img src="Images/work2.jpg">
+                 <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The app connects you to the best musics around the world.
+                        Download it from Goggle Play Store</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work" data-aos="zoom-in" data-aos-delay="600">
+                <img src="Images/work3.jpg">
+                 <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The app connects you for best shopping around the world.
+                        Download it from Goggle Play Store</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn" data-aos="fade-up" data-aos-delay="800">See more</a>
+    </div>
+</div>
+<!----------contact--------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left" data-aos="fade-right" data-aos-duration="1000">
+                <h1 class="sub-title">Contact Me</h1>
+                <p data-aos="fade-up" data-aos-delay="200"><i class="fa-solid fa-paper-plane"></i>anuragsalpe123@example.com</p>
+                <p data-aos="fade-up" data-aos-delay="300"><i class="fa-solid fa-phone"></i>9527532160</p>
+                <div class="social-icons" data-aos="fade-up" data-aos-delay="400">
+                    <a href="https://www.instagram.com/anurag_salpe?igsh=Nng1NzVpcWJ2czJ0"><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="http://www.linkedin.com/in/anurag-salpe-0a23572a4"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/AnuragSalpe"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <a href="Images/anurag_salpe_cv (1) (8).pdf" download class="btn btn2" data-aos="zoom-in" data-aos-delay="500">Download CV</a> </div>
+            <div class="contact-right" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                <form method="post" action="https://script.google.com/macros/s/AKfycbye_Yno3Huoh-30g0qs_16wEnUATfFyzrRQjzt6MMdb-HW76F4i6EcJy2-eDoJHPlad/exec" name="contact-form">
+                    <input type="text" name="Name" placeholder="Your Name" required data-aos="fade-up" data-aos-delay="300"> 
+                    <input type="email" name="Email" placeholder="Your Email" required data-aos="fade-up" data-aos-delay="400">
+                    <textarea name="Message" rows="6" placeholder="Your Message" data-aos="fade-up" data-aos-delay="500"></textarea>
+                    <button type="submit" class="btn btn2" data-aos="zoom-in" data-aos-delay="600">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright" data-aos="fade-up">
+        <p>Copyright © 2025 Anurag Salpe <i class="fa-solid fa-shield-heart"></i></p>
+        <br>All rights reserved.
+    </div>
+</div>
+
+<!-- Floating particles background -->
+<div class="particles-container">
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+</div>
+
+<script>
+// Initialize AOS
+AOS.init({
+    duration: 1000,
+    once: true,
+    offset: 100,
+    easing: 'ease-in-out'
+});
+
+// Smooth scrolling for navigation links
+document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+});
+
+// Parallax effect for header
+window.addEventListener('scroll', () => {
+    const scrolled = window.pageYOffset;
+    const rate = scrolled * -0.5;
+    const header = document.getElementById('header');
+    if (header) {
+        header.style.transform = `translateY(${rate}px)`;
+    }
+});
+
+// Navbar background change on scroll
+window.addEventListener('scroll', () => {
+    const nav = document.querySelector('nav');
+    if (window.scrollY > 100) {
+        nav.classList.add('scrolled');
+    } else {
+        nav.classList.remove('scrolled');
+    }
+});
+
+// Typing effect for name
+function typeWriter(element, text, speed = 100) {
+    let i = 0;
+    element.innerHTML = '';
+    function type() {
+        if (i < text.length) {
+            element.innerHTML += text.charAt(i);
+            i++;
+            setTimeout(type, speed);
+        }
+    }
+    type();
+}
+
+// Initialize typing effect when page loads
+window.addEventListener('load', () => {
+    const typingElement = document.querySelector('.typing-effect');
+    if (typingElement) {
+        setTimeout(() => {
+            typeWriter(typingElement, 'Anurag Salpe', 150);
+        }, 2000);
+    }
+});
+
+// Scroll progress indicator
+const scrollProgress = document.createElement('div');
+scrollProgress.className = 'scroll-progress';
+document.body.appendChild(scrollProgress);
+
+window.addEventListener('scroll', () => {
+    const scrollTop = document.documentElement.scrollTop;
+    const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrollPercent = (scrollTop / scrollHeight) * 100;
+    scrollProgress.style.width = scrollPercent + '%';
+});
+
+// Enhanced hover effects for service cards
+document.querySelectorAll('.service-card').forEach(card => {
+    card.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-15px) scale(1.02)';
+        this.style.boxShadow = '0 20px 40px rgba(255, 0, 79, 0.3)';
+    });
+    
+    card.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateY(0) scale(1)';
+        this.style.boxShadow = 'none';
+    });
+});
+
+// Intersection Observer for additional animations
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('animate-in');
+        }
+    });
+}, observerOptions);
+
+// Observe elements for custom animations
+document.querySelectorAll('.work, .service-card, .profile-image').forEach(el => {
+    observer.observe(el);
+});
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+const scriptURL = 'https://script.google.com/macros/s/AKfycbye_Yno3Huoh-30g0qs_16wEnUATfFyzrRQjzt6MMdb-HW76F4i6EcJy2-eDoJHPlad/exec'
+
+const form = document.forms['contact-form']
+const msg = document.getElementById("msg")
+form.addEventListener('submit', e => {
+  
+  e.preventDefault()
+  
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+  .then(response => {
+    msg.innerHTML = "Form sent successfully"
+    setTimeout(function(){
+        msg.innerHTML = ""
+    },5000)
+    form.reset()
+  })
+  .catch(error => console.error('Error!', error.message))
+ })
+</script>
+</body>
+</html>
+
